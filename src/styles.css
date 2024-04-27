@@ -1,3 +1,40 @@
+:root {
+  --main-color: #290342;
+  --btn-color: #fb5c8d;
+}
 body {
-  background-color: #12101d;
+  background: var(--main-color);
+  font-family: Poppins, sans-serif;
+}
+header {
+  background-image: linear-gradient(rgba(39, 0, 31, 0.7), rgba(4, 0, 19, 0.7)),
+    url(../img/header3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 120px;
+  letter-spacing: 5px;
+  opacity: 0.5;
+  margin-bottom: 0;
+  color: var(--btn-color);
+}
+header h2 {
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+header a {
+  background-color: var(--btn-color);
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 15px 20px;
 }
