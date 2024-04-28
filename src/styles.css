@@ -22,11 +22,12 @@ header h1 {
   opacity: 0.6;
   margin-bottom: 0;
   color: var(--btn-color);
-  -webkit-text-stroke: 3px var(--main-color);
+  -webkit-text-stroke: 3px black;
 }
 header h2 {
   font-weight: 500;
   font-size: 40px;
+  opacity: 0.9;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -41,6 +42,7 @@ header a {
 }
 main {
   color: white;
+  padding: 30px;
 }
 main h2 {
   font-weight: 500;
@@ -53,12 +55,32 @@ main img {
   border-radius: 6px;
 }
 section {
-  background: #1a0820;
   padding: 10px 20px;
   margin: 15px auto;
 }
 main img {
   max-width: 300px;
+}
+footer {
+  background-image: linear-gradient(rgba(29, 3, 24, 0.9), rgba(5, 1, 20, 0.9)),
+    url(../img/header3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 30px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
 }
 .grid-2-columns {
   display: grid;
@@ -67,6 +89,4 @@ main img {
 }
 .facts h3 {
   color: var(--btn-color);
-}
-.media {
 }
