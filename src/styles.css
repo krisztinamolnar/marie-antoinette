@@ -41,25 +41,31 @@ header a {
   padding: 15px 20px;
 }
 main {
-  color: white;
-  padding: 30px;
+  color: black;
+  padding: 30px 0;
+  background-color: #d2bce0;
 }
 main h2 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 46px;
+  padding: 0;
+  margin: 0;
 }
 main h3 {
   font-weight: 700;
+  font-size: 30px;
 }
 main img {
-  border-radius: 6px;
+  border-radius: 3px;
 }
 section {
   padding: 10px 20px;
   margin: 15px auto;
 }
 main img {
-  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
 }
 footer {
   background-image: linear-gradient(rgba(29, 3, 24, 0.9), rgba(5, 1, 20, 0.9)),
@@ -82,11 +88,42 @@ footer li {
 footer a {
   color: white;
 }
+
+.intro h2 {
+  color: var(--btn-color);
+}
+.container {
+  background-color: #efd5ff;
+}
 .grid-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
+.facts {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
 .facts h3 {
   color: var(--btn-color);
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 30px 10px;
+  }
+  header h1 {
+    font-size: 60px;
+    -webkit-text-stroke: 1px black;
+  }
+  header h2 {
+    font-size: 50px;
+  }
+  main img {
+    display: none;
+  }
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
 }
